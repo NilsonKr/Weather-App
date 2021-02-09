@@ -1,0 +1,16 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather App",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "@nilsonkr",
+  "license": "ISC",
+  "devDependencies": {
+    "animate.css": "4.1.1",
+    "live-server": "1.2.1"
+  },
+  "dependencies": {}
+}
