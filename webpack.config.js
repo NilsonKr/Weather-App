@@ -30,10 +30,10 @@ module.exports = {
             }
         ]
     },
-    plugins: [/* 
+    plugins: [
         new MiniCssExtractPlugin({
-            filename: 'css/[name].css'
-        }), */
+            filename: 'styles/[name].css'
+        }), 
         new CopyPlugin({
             patterns: [{ from: 'styles',
             to: 'styles/' },

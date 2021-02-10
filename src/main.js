@@ -1,6 +1,7 @@
 import validate from './utils/validate.js'
 import fetchData from './utils/fetchData.js'
 import render from './utils/render.js'
+import '../node_modules/animate.css/animate.min.css'
 
 const inputCity = document.querySelector('#input-city')
 const form = document.querySelector('#weather-form')
