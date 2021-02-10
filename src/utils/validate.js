@@ -4,6 +4,8 @@ function validate(data){
     
     if(city === 'south korea' ){
         city = 'korea'
+    }else if(city === 'nueva york'){
+        city = 'new york'
     }
 
     city = city.split(' ')
