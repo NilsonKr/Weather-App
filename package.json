@@ -4,8 +4,7 @@
   "description": "Weather App",
   "main": "src/main.js",
   "scripts": {
-    "start": "live-server",
-    "dev": "webpack-dev-server --open",
+    "start": "webpack-dev-server --open",
     "build": "webpack --mode production"
   },
   "author": "@nilsonkr",

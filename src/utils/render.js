@@ -36,10 +36,6 @@ function render(data){
                     <h4>Date: ${date.toLocaleString()}</h4>
                     <img src="${iconUrl}${data.weather[0].icon}.png" alt= ${data.weather[0].main}/>
                 </div>
-                <div class="card-temps">
-                    <p>Temp Min : ${data.main.temp_min} °C</p>
-                    <p>Temp Max : ${data.main.temp_max} °C</p>
-                </div>
             </div>
     `
     cardContainer.innerHTML = view
