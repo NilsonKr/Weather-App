@@ -2,7 +2,7 @@
     --main-font: 'Open Sans', sans-serif;
     --hero-font: 'Oleo Script', cursive;
     --main-color: #011f4b;
-    --second-color: rgba(245, 245, 245, 0.637);
+    --second-color: rgba(245, 245, 245, 0.692);
 }
 
 *{
@@ -81,7 +81,7 @@ html{
     left: 0;
     right: 0;
     background-color: black;
-    opacity: 0.1;
+    opacity: 0.3;
 }
 .hero-container h1{
     color: whitesmoke;
@@ -147,20 +147,34 @@ html{
     justify-content: center;
     flex-wrap: wrap;
 }
+.Weather{
+    margin-bottom: 40px;
+}
 .card-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     width: 75%;
     min-width: 200px;
     max-width: 400px;
     min-height: 300px;
-    margin-bottom: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
     padding: 5px;
     box-shadow: 5px 6px 0px gray;
     border-radius: 20px;
     color: white;
+}
+.card-container::after{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: inherit;
+    background-image:linear-gradient(to bottom, rgba(0,0,0, 0) 40%, rgba(0,0,0, 0.25) 60%);
 }
 .card-back1{
      background: url('../assets/backs/back1.png') center / cover no-repeat;
@@ -170,7 +184,6 @@ html{
     background: url('../assets/backs/back2.png') center / cover no-repeat;
 }
 .card-back3{
-    
     background: url('../assets/backs/back3.png') center / cover no-repeat;
 }
 .card-main{
@@ -179,42 +192,53 @@ html{
     justify-content: space-around;
     align-items: center;
     width: 60%;
-    min-height: 40%;
     text-align: center;
-}
-.card-info{
-    position: relative;
 }
 .card-info h2{
     font-size: 3rem;
 }
-.card-info .card-grades{
-    color: var(--second-color);
-    position: absolute;
-    font-size: 1.7rem;
-    right:  -15px;
-    top: 0;
-}
 .card-info p{
     color: var(--second-color);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .card-country{
     font-size: 1.8rem;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 .card-details{
+    font-size: 1.3rem;
+    position: relative;
+    z-index: 1;
+    min-height: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
-.card-date{
-    max-width: 40%;
-    padding-left: 5px;
+
+.grades-container{
+    width: 100%;
+    min-height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.card-date img{
-    width: 40px;
+
+.grades{
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 0px gray;
+}
+
+.grades h3{
+    text-align: center;
+    font-size: 1.6rem;
+}
 
 
 
