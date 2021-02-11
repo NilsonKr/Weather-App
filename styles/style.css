@@ -135,6 +135,12 @@ html{
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.336);
     
 }
+.app-error{
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--main-font);
+    margin: 10px 0 ;
+}
 .app-container{
     min-width: 280px;
     display: flex;
@@ -209,12 +215,6 @@ html{
 }
 .card-date img{
     width: 40px;
-}
-.card-temps p{
-    margin: 5px 0;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-}
 
 
 
